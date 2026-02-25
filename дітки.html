@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Все про дітей</title>
+
+<style>
+#sub-text {
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+    max-width: 700px;
+
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease;
+}
+
+#sub-text.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* головний екранчик з вступом */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    flex-direction: column;
+    padding-top: 10vh;
+
+    background: url("Стиль Малыша.JPG") center/cover no-repeat;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    top: 0;
+    left: 0;
+}
+
+.hero h1 {
+    position: relative;
+    color: white;
+    font-size: 52px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    opacity: 0;
+    transform: translateY(40px);
+    filter: blur(8px);
+
+    animation: smoothText 2.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* анімка */
+@keyframes smoothText {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+/* Мигающий курсорчик */
+.cursor {
+    display: inline-block;
+    width: 3px;
+    background-color: white;
+    margin-left: 5px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/* Блок статей тута */
+/* фон потім поставлю, може колір*/
+.content-section {
+    background: linear-gradient(to bottom, #f0f2f5, #dde3ea);
+    padding: 60px 0;
+}
+
+/* контейнер */
+.container {
+    width: 1850px;        
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+}
+
+/* Бокові колонки з майбутньою інфою  */
+.sidebar {
+    width: 250px;
+}
+
+/* Білі рамки під тексти */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.main-content {
+    flex: 1;              
+}
+
+/* Відступ текста */
+.card h3,
+.card h2,
+.card p {
+    margin-top: 0;
+}
+
+.article {
+    margin-bottom: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+    <h1 id="main-title">Все про дітей, все для батьків!</h1>
+    <p id="sub-text"></p>
+</section>
+
+<section class="content-section">
+    <div class="container">
+        
+        <div class="sidebar">
+            <div class="card">
+                <h3>Категорія</h3>
+                <p>Виховання</p>
+                <p>Психологія</p>
+                <p>Здоров’я</p>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="card">
+                <h2>Стаття 1</h2>
+                <p>Тут буде текст статті...</p>
+            </div>
+
+            <div class="card" style="margin-top:20px;">
+                <h2>Стаття 2</h2>
+                <p>І тут теж буде текст статті...</p>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="card">
+                <h3>Реклама</h3>
+                <p>Бепантен</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script>
+const subText = document.getElementById("sub-text");
+
+const description = "На цьому сайті ви знайдете корисні статті про виховання, психологію дітей, здоров’я та розвиток. Матеріали створені для турботливих батьків.";
+
+function startSubText() {
+    subText.classList.add("show");
+
+    let index = 0;
+    function typeDescription() {
+        if (index < description.length) {
+            subText.textContent += description.charAt(index);
+            index++;
+            setTimeout(typeDescription, 35);
+        }
+    }
+
+    typeDescription();
+}
+
+window.onload = function() {
+    setTimeout(startSubText, 2300);
+};
+
+</script>
+
+</body>
+</html>
