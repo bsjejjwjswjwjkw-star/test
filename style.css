@@ -118,3 +118,13 @@
 .article {
     margin-bottom: 20px;
 }
+.category {
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.category:hover {
+    background: #f0f0f0;
+}
