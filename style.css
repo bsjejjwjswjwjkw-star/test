@@ -6,7 +6,7 @@
 
     opacity: 0;
     transform: translateY(20px);
-    transition: all 0.8s ease;
+    transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 #sub-text.show {
