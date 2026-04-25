@@ -3,19 +3,20 @@ const subText = document.getElementById("sub-text");
 const description = "На цьому сайті ви знайдете корисні статті про прикорм дітей, психологію та все що зв'язане з дітьми. Матеріали створені для турботливих батьків.";
 
 function startSubText() {
+    subText.textContent = description;
     subText.classList.add("show");
-
-    let index = 0;
-    function typeDescription() {
-        if (index < description.length) {
-            subText.textContent += description.charAt(index);
-            index++;
-            setTimeout(typeDescription, 35);
-        }
-    }
-
-    typeDescription();
 }
+
+window.onload = function() {
+    setTimeout(startSubText, 800);
+};
+
+
+function startSubText() {
+    subText.textContent = description;
+    subText.classList.add("show");
+}
+
 
 window.onload = function() {
     setTimeout(startSubText, 2300);
