@@ -137,6 +137,9 @@
 }
 
 .block {
+    border: 5px solid red;
+}
+.block {
     background: white;
     padding: 25px;
     border-radius: 10px;
