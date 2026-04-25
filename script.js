@@ -7,22 +7,8 @@ function startSubText() {
     subText.classList.add("show");
 }
 
-window.onload = function() {
-    setTimeout(startSubText, 800);
-};
-
-
-function startSubText() {
-    subText.textContent = description;
-    subText.classList.add("show");
-}
-
-
-window.onload = function() {
-    setTimeout(startSubText, 2300);
-};
 window.addEventListener("DOMContentLoaded", () => {
-    startSubText();
+    setTimeout(startSubText, 800);
 
     const categories = document.querySelectorAll(".category");
     const articles = document.querySelectorAll(".article");
