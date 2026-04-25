@@ -1,12 +1,13 @@
-#sub-text {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.8s ease;
-}
-
-#sub-text.show {
-    opacity: 1;
-    transform: translateY(0);
+#sub-text { margin-top: 20px; 
+           font-size: 20px; 
+           color: white; 
+           max-width: 700px; 
+           opacity: 0; 
+           transform: translateY(20px); 
+           transition: all 0.8s ease; 
+          } 
+#sub-text.show { opacity: 1; 
+transform: translateY(0); 
 }
 
 /* головний екранчик з вступом */
