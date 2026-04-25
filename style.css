@@ -128,3 +128,27 @@
 .category:hover {
     background: #f0f0f0;
 }
+
+
+.blocks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.block {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.block:hover {
+    transform: translateY(-5px);
+}
+
+.block h3 {
+    margin-bottom: 10px;
+}
