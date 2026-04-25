@@ -4,7 +4,11 @@ const description = "На цьому сайті ви знайдете корис
 
 function startSubText() {
     subText.textContent = description;
-    subText.classList.add("show");
+
+    // ⬇️ маленькая пауза перед появлением
+    setTimeout(() => {
+        subText.classList.add("show");
+    }, 100);
 }
 
 window.addEventListener("DOMContentLoaded", () => {
