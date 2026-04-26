@@ -18,7 +18,7 @@ transform: translateY(0);
 
 
 .hero {
-    height: 93vh; 
+    height: 98vh; 
     max-height: 730px;
     display: flex;
     justify-content: center;
