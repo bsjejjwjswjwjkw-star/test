@@ -4,26 +4,41 @@
     box-sizing: border-box;
 }
 
-#sub-text { margin-top: 20px; 
-           font-size: 20px; 
-           color: white; 
-           max-width: 700px; 
-           opacity: 0; 
-           transform: translateY(20px); 
-           transition: all 0.8s ease; 
-          } 
-#sub-text.show { opacity: 1; 
-transform: translateY(0); 
+/* =========================
+   ПЛАВНОЕ ПОЯВЛЕНИЕ ТЕКСТА
+========================= */
+
+#sub-text {
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+    max-width: 700px;
+
+    opacity: 0;
+    transform: translateY(20px);
+
+    transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
+#sub-text.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* =========================
+   ГЛАВНЫЙ ЭКРАН
+========================= */
 
 .hero {
-    height: 98vh; 
+    height: 98vh;
     max-height: 850px;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     text-align: center;
+
     position: relative;
     flex-direction: column;
 
@@ -32,29 +47,36 @@ transform: translateY(0);
 
 .hero::before {
     content: "";
+
     position: absolute;
+
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.4);
+
     top: 0;
     left: 0;
+
+    background: rgba(0, 0, 0, 0.4);
 }
 
 .hero h1 {
     position: relative;
+
     color: white;
+
     font-size: 52px;
     font-weight: 600;
+
     letter-spacing: 1px;
 
     opacity: 0;
     transform: translateY(40px);
+
     filter: blur(8px);
 
-    animation: smoothText 2.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation: smoothText 2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
-/* анімка */
 @keyframes smoothText {
     to {
         opacity: 1;
@@ -63,69 +85,59 @@ transform: translateY(0);
     }
 }
 
-/* Мигающий курсорчик */
-.cursor {
-    display: inline-block;
-    width: 3px;
-    background-color: white;
-    margin-left: 5px;
-    animation: blink 1s infinite;
-}
+/* =========================
+   ОСНОВНОЙ БЛОК
+========================= */
 
-@keyframes blink {
-    0% {opacity: 1;}
-    50% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
-/* Блок статей тута */
-/* фон потім поставлю, може колір*/
 .content-section {
     background: linear-gradient(to bottom, #f0f2f5, #dde3ea);
+
     padding: 60px 0;
 }
 
 .container {
     width: 100%;
+
     padding: 0 40px;
+
     display: flex;
+
     justify-content: space-between;
+
     gap: 30px;
 }
 
-/* Бокові колонки з майбутньою інфою  */
+/* =========================
+   БОКОВЫЕ КОЛОНКИ
+========================= */
+
 .sidebar {
     width: 260px;
-    flex-shrink: 0; 
+
+    flex-shrink: 0;
 }
 
-/* Білі рамки під тексти */
 .card {
     background: white;
+
     padding: 20px;
-    border-radius: 8px;
+
+    border-radius: 15px;
+
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
+/* =========================
+   КАТЕГОРИИ
+========================= */
 
-.main-content {
-    flex: 1;
-}
-
-/* Відступ текста */
-.card h3,
-.card h2,
-.card p {
-    margin-top: 0;
-}
-
-.article {
-    margin-bottom: 20px;
-}
 .category {
     cursor: pointer;
-    padding: 8px;
-    border-radius: 6px;
+
+    padding: 10px;
+
+    border-radius: 8px;
+
     transition: 0.3s;
 }
 
@@ -133,121 +145,146 @@ transform: translateY(0);
     background: #f0f0f0;
 }
 
+/* =========================
+   КОНТЕНТ
+========================= */
+
+.main-content {
+    flex: 1;
+}
+
+/* =========================
+   СЕТКА КАРТОЧЕК
+========================= */
 
 .blocks {
-    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
     gap: 40px;
 }
 
-.block {
-    border: 5px solid red;
-}
-
-.block:hover {
-    transform: translateY(-5px);
-}
-
-.block {
-    padding: 30px;
-    font-size: 16px;
-}
-
-.block h3 {
-    font-size: 20px;
-}
-
-
-.blocks {
-    display: grid !important;
-    grid-template-columns: repeat(3, 1fr) !important;
-    gap: 25px;
-}
-
-.block {
-    display: block;
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-    transition: 0.3s;
-}
+/* =========================
+   КАРТОЧКИ
+========================= */
 
 .block {
     background: white;
+
     border-radius: 25px;
+
     overflow: hidden;
+
     box-shadow: 0 5px 20px rgba(0,0,0,0.08);
 
     transition: 0.3s;
-}
 
-.block:hover {
-    transform: translateY(-8px);
-}
+    opacity: 0;
+    transform: translateY(40px);
 
-.block {
-    overflow: hidden;
-}
-
-.block img {
-    width: 100%;
-    height: 260px;
-    object-fit: cover;
-
-transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+    animation: showCard 0.8s ease forwards;
 }
 
 .block:hover {
     transform: translateY(-10px);
 }
 
+/* =========================
+   КАРТИНКИ
+========================= */
+
+.block img {
+    width: 100%;
+
+    height: 260px;
+
+    object-fit: cover;
+
+    transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
 .block:hover img {
     transform: scale(1.08);
 }
+
+/* =========================
+   ВНУТРЕННОСТИ КАРТОЧКИ
+========================= */
 
 .card-content {
     padding: 25px;
 }
 
+/* =========================
+   ТЕГИ
+========================= */
+
 .tags {
     display: flex;
+
     gap: 10px;
+
     margin-bottom: 20px;
 }
 
 .tags span {
     border: 1px solid #23415c;
+
     border-radius: 20px;
+
     padding: 6px 14px;
+
     font-size: 12px;
+
     color: #23415c;
 }
 
+/* =========================
+   ТЕКСТ В КАРТОЧКЕ
+========================= */
+
 .block h3 {
-    font-size: 34px;
+    font-size: 30px;
+
     color: #23415c;
+
     margin-bottom: 15px;
 }
 
 .block p {
     color: #444;
+
     line-height: 1.6;
+
     margin-bottom: 20px;
 }
 
 .block small {
     display: block;
+
     margin-bottom: 25px;
+
     color: #666;
 }
 
+/* =========================
+   КНОПКА
+========================= */
+
 .btn {
     background: #12324d;
+
     color: white;
+
     border: none;
+
     padding: 14px 28px;
+
     border-radius: 30px;
+
     cursor: pointer;
+
     font-size: 16px;
 
     transition: 0.3s;
@@ -257,16 +294,41 @@ transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1);
     transform: scale(1.05);
 }
 
-.block {
-    opacity: 0;
-    transform: translateY(40px);
-
-    animation: showCard 0.8s ease forwards;
-}
+/* =========================
+   АНИМАЦИЯ КАРТОЧЕК
+========================= */
 
 @keyframes showCard {
     to {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* =========================
+   ЗАДЕРЖКА ПОЯВЛЕНИЯ
+========================= */
+
+.block:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.block:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.block:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.block:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.block:nth-child(5) {
+    animation-delay: 1s;
+}
+
+.block:nth-child(6) {
+    animation-delay: 1.2s;
 }
