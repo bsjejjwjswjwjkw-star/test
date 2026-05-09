@@ -98,13 +98,18 @@
 .container {
     width: 100%;
 
-    padding: 0 40px;
+    display: grid;
 
-    display: flex;
-
-    align-items: flex-start;
+    grid-template-columns:
+        250px
+        1fr
+        250px;
 
     gap: 30px;
+
+    align-items: start;
+
+    padding: 0 40px;
 }
 
 /* =========================
@@ -112,9 +117,7 @@
 ========================= */
 
 .sidebar {
-    width: 250px;
-
-    flex-shrink: 0;
+    width: 100%;
 }
 
 .card {
@@ -150,7 +153,7 @@
 ========================= */
 
 .main-content {
-    flex: 1;
+    width: 100%;
 }
 
 /* =========================
