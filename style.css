@@ -289,7 +289,7 @@ grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 ========================= */
 
 .btn {
-    background: linear-gradient(135deg, #457b9d, #1d3557);
+    background: linear-gradient(135deg, #cea79d, #59e6cd);
 
     color: white;
 
@@ -317,7 +317,7 @@ grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 
     box-shadow: 0 12px 24px rgba(29, 53, 87, 0.35);
 
-    background: linear-gradient(135deg, #cea79d, #59e6cd);
+    background: linear-gradient(135deg, #cde8f1, #6399ab);
 }
 
 /* =========================
