@@ -317,7 +317,7 @@ grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 
     box-shadow: 0 12px 24px rgba(29, 53, 87, 0.35);
 
-    background: linear-gradient(135deg, #5a8db1, #27496d);
+    background: linear-gradient(135deg, #cea79d, #59e6cd);
 }
 
 /* =========================
