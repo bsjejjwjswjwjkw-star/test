@@ -59,7 +59,7 @@ body {
 .hero h1 {
     position: relative;
 
-    color: white;
+    color: white !important;
 
     font-size: 52px;
     font-weight: 600;
@@ -79,7 +79,7 @@ body {
 
 .hero-description {
     margin-top: 18px;
-
+    color: white !important;
     color: rgba(255,255,255,0.92);
 
     font-size: 22px;
@@ -118,7 +118,7 @@ body {
 ========================= */
 
 .content-section {
-    background: linear-gradient(to bottom, #f0f2f5, #dde3ea);
+    background: linear-gradient(to bottom, #ffeee3, #f7cdb2);
 
     padding: 60px 0;
 }
