@@ -1,5 +1,5 @@
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Manrope', sans-serif;
 }
 
 * {
@@ -283,7 +283,7 @@ body {
 ========================= */
 
 .block h3 {
-    font-size: 28px;
+    font-size: 30px;
 
     color: #1d3557;
 
@@ -291,12 +291,14 @@ body {
 
     font-weight: 700;
 
-    line-height: 1.3;
+    letter-spacing: -1px;
 }
 
 .block p {
     color: #5c6770;
 
+    font-weight: 500;
+    
     line-height: 1.8;
 
     margin-bottom: 22px;
