@@ -543,3 +543,19 @@ grid-template-columns:
     position: relative;
     z-index: 2;
 }
+
+
+.site-footer {
+    width: 100%;
+    background: rgba(25,25,25,0.7);
+    backdrop-filter: blur(10px);
+    color: white;
+    text-align: center;
+    padding: 14px 0;
+    margin-top: 40px;
+    font-size: 14px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+.site-footer p {
+    margin: 0;
+}
