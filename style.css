@@ -118,7 +118,7 @@ body {
 ========================= */
 
 .content-section {
-    background: linear-gradient(to bottom, #ffe5db, #f0c2b6);
+    background: linear-gradient(to bottom, #ffe5db, #b6d7f0);
 
     padding: 60px 0;
 }
@@ -128,10 +128,10 @@ body {
 
     display: grid;
 
-    grid-template-columns:
-        250px
-        1fr
-        250px;
+grid-template-columns:
+    220px
+    1fr
+    320px;
 
     gap: 30px;
 
@@ -408,55 +408,89 @@ body {
 
 
 /* =========================
-   РЕКЛАМНЫЙ БАННЕР
+   ПРАВАЯ КОЛОНКА
 ========================= */
 
-.ad-card {
-    text-align: center;
+.ads-sidebar {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 28px;
 }
 
-.ad-banner {
+/* =========================
+   БАННЕР
+========================= */
+
+.ad-box {
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 28px;
+
+    box-shadow: 0 12px 35px rgba(0,0,0,0.08);
+
+    transition: 0.35s ease;
+
+    background: transparent;
+}
+
+.ad-box:hover {
+    transform: translateY(-6px);
+}
+
+/* =========================
+   КАРТИНКА
+========================= */
+
+.ad-image {
     width: 100%;
 
-    border-radius: 18px;
+    display: block;
 
-    margin: 15px 0;
-
-    object-fit: cover;
-
-    transition: 0.4s ease;
+    border-radius: 28px;
 }
 
-.ad-banner:hover {
-    transform: scale(1.03);
-}
-
-/* КНОПКА РЕКЛАМЫ */
+/* =========================
+   КНОПКА НА БАННЕРЕ
+========================= */
 
 .ad-btn {
-    width: 100%;
+    position: absolute;
 
-    padding: 14px;
+    left: 50%;
+
+    bottom: 22px;
+
+    transform: translateX(-50%);
+
+    width: 82%;
+
+    padding: 16px;
 
     border: none;
 
-    border-radius: 30px;
+    border-radius: 14px;
 
-    background: linear-gradient(135deg, #4ccba3, #2e8b83);
+    background: linear-gradient(135deg, #39c7a1, #2b9e87);
 
     color: white;
 
-    font-size: 15px;
+    font-size: 17px;
 
     font-weight: 700;
 
     cursor: pointer;
 
     transition: 0.3s ease;
+
+    backdrop-filter: blur(4px);
 }
 
 .ad-btn:hover {
-    transform: translateY(-3px);
+    transform: translateX(-50%) translateY(-3px);
 
-    background: linear-gradient(135deg, #63d6b3, #37958d);
+    background: linear-gradient(135deg, #48d8b1, #31af97);
 }
