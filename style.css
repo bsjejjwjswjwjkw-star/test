@@ -459,9 +459,8 @@ grid-template-columns:
 
 .ad-image {
     width: 100%;
-
+    cursor: pointer;
     display: block;
-
     border-radius: 28px;
 }
 
@@ -486,7 +485,7 @@ grid-template-columns:
 
     border-radius: 14px;
 
-    background: linear-gradient(135deg, #39c7a1, #2b9e87);
+    background: linear-gradient(135deg, #9b6dff, #6b3dff);
 
     color: white;
 
