@@ -631,3 +631,28 @@ grid-template-columns:
 
     letter-spacing: 1px;
 }
+
+
+.card {
+    position: relative;
+
+    overflow: hidden;
+}
+
+.stars-gif {
+    position: absolute;
+
+    top: -35px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 180px;
+
+    pointer-events: none;
+
+    z-index: 3;
+
+    opacity: 0.9;
+}
