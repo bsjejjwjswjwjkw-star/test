@@ -717,3 +717,23 @@ grid-template-columns:
 
     opacity: 0.95;
 }
+
+.middle-image{
+    position: relative;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    margin-top: -40px; /* вверх/вниз */
+    margin-bottom: -20px;
+
+    z-index: 5;
+}
+
+.middle-image img{
+    width: 350px; /* розмір */
+
+    pointer-events: none;
+}
