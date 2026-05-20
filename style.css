@@ -701,3 +701,17 @@ grid-template-columns:
     opacity: 0.9;
 }
 
+.ribbon-wrapper {
+    display: flex;
+    justify-content: center; /* Центрує картинку по горизонталі */
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;       /* Відступ зверху від карток */
+    margin-bottom: 20px;    /* Відступ знизу до футера */
+}
+
+.ribbon-img {
+    max-width: 250px;       /* Можете змінити ширину під розмір своєї картинки */
+    height: auto;           /* Зберігає пропорції стрічки */
+    display: block;
+}
