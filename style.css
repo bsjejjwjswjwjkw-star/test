@@ -718,22 +718,21 @@ grid-template-columns:
     opacity: 0.95;
 }
 
-.middle-image{
+.content-section{
     position: relative;
-
-    width: 100%;
-
-    display: flex;
-    justify-content: center;
-
-    margin-top: -40px; /* вверх/вниз */
-    margin-bottom: -20px;
-
-    z-index: 5;
 }
+.hmara{
+    position: absolute;
 
-.middle-image img{
-    width: 350px; /* розмір */
+    top: -80px; /* НАСКІЛЬКИ залазить наверх */
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 420px;
+
+    z-index: 20;
 
     pointer-events: none;
 }
