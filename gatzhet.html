@@ -1,13 +1,260 @@
-
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <title>Прикорм</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Прикорм</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Manrope', sans-serif;
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.25),
+    rgba(0,0,0,0.25)),
+    url('phonna1.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:40px;
+
+    position:relative;
+}
+
+/* =========================
+   ГОЛОВНА КАРТОЧКА
+========================= */
+
+.main-box{
+
+    width:900px;
+
+    min-height:900px;
+
+    background:rgba(255,255,255,0.96);
+
+    border-radius:12px;
+
+    padding:50px 60px;
+
+    box-shadow:
+    0 10px 40px rgba(0,0,0,0.25);
+
+    position:relative;
+}
+
+/* =========================
+   ЗАГОЛОВОК
+========================= */
+
+.main-box h1{
+
+    text-align:center;
+
+    font-size:64px;
+
+    font-weight:600;
+
+    letter-spacing:4px;
+
+    margin-bottom:30px;
+
+    color:#222;
+}
+
+/* =========================
+   ОПИС
+========================= */
+
+.subtitle{
+
+    font-size:28px;
+
+    color:#444;
+
+    margin-bottom:40px;
+
+    text-align:center;
+}
+
+/* =========================
+   ТЕКСТ
+========================= */
+
+.content{
+
+    font-size:20px;
+
+    line-height:1.9;
+
+    color:#444;
+}
+
+/* =========================
+   ПІДКАЗКИ ЗЛІВА
+========================= */
+
+.tips{
+
+    position:absolute;
+
+    left:10px;
+
+    top:120px;
+
+    width:170px;
+
+    background:white;
+
+    border-radius:10px;
+
+    padding:18px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+.tips h3{
+
+    margin-bottom:10px;
+
+    font-size:30px;
+}
+
+.tips p{
+
+    line-height:1.7;
+}
+
+/* =========================
+   ВЕРТИКАЛЬНА КНОПКА
+========================= */
+
+.side-button{
+
+    position:absolute;
+
+    right:20px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    writing-mode:vertical-rl;
+
+    text-orientation:mixed;
+
+    background:white;
+
+    padding:25px 18px;
+
+    border-radius:12px;
+
+    font-size:32px;
+
+    font-weight:600;
+
+    color:#222;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.side-button:hover{
+
+    transform:
+    translateY(-50%)
+    scale(1.05);
+}
+
+/* =========================
+   АДАПТИВ
+========================= */
+
+@media(max-width:1100px){
+
+    .tips{
+        display:none;
+    }
+
+    .side-button{
+        display:none;
+    }
+
+    .main-box{
+        width:100%;
+    }
+
+    .main-box h1{
+        font-size:42px;
+    }
+
+}
+
+</style>
 </head>
+
 <body>
 
-<h1>Сторінка в розробці</h1>
+<!-- ПІДКАЗКИ -->
+
+<div class="tips">
+
+    <h3>Підказки</h3>
+
+    <p>
+    • Прикорм<br>
+    • Сезонне харчування<br>
+    • Помилки батьків
+    </p>
+
+</div>
+
+<!-- ГОЛОВНА КАРТОЧКА -->
+
+<div class="main-box">
+
+    <h1>ПРИКОРМ</h1>
+
+    <div class="subtitle">
+        Теми та опис всього, подальший текст
+    </div>
+
+    <div class="content">
+
+        Тут буде ваш текст про прикорм, таблиці,
+        рекомендації, поради для батьків,
+        інформація про введення нових продуктів
+        та інші корисні матеріали.
+
+    </div>
+
+</div>
+
+<!-- БОКОВА КНОПКА -->
+
+<div class="side-button">
+    реклама
+</div>
 
 </body>
 </html>
