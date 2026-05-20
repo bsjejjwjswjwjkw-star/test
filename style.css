@@ -706,13 +706,13 @@ grid-template-columns:
     justify-content: center; /* Центрує картинку по горизонталі */
     align-items: center;
     width: 100%;
-    margin-top: 100px;       /* Відступ зверху від карток */
-    margin-bottom: 20px;    /* Відступ знизу до футера */
+    margin-top: 90px;       /* Відступ зверху від карток */
+    margin-bottom: 40px;    /* Відступ знизу до футера */
 }
 
 .bluelenta-img {
-    max-width: 200px;       /* Можете змінити ширину під розмір своєї картинки */
+    max-width: 450px;       /* Можете змінити ширину під розмір своєї картинки */
     height: auto;           /* Зберігає пропорції стрічки */
     display: block;
-    margin-left: 200px;
+    margin-left: 300px;
 }
