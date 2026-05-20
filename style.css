@@ -711,7 +711,7 @@ grid-template-columns:
 }
 
 .ribbon-img {
-    max-width: 270px;       /* Можете змінити ширину під розмір своєї картинки */
+    max-width: 300px;       /* Можете змінити ширину під розмір своєї картинки */
     height: auto;           /* Зберігає пропорції стрічки */
     display: block;
     margin-left: 150px;
