@@ -706,7 +706,7 @@ grid-template-columns:
     justify-content: center; /* Центрує картинку по горизонталі */
     align-items: center;
     width: 100%;
-    margin-top: 90px;       /* Відступ зверху від карток */
+    margin-top: 150px;       /* Відступ зверху від карток */
     margin-bottom: 40px;    /* Відступ знизу до футера */
 }
 
