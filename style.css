@@ -724,7 +724,7 @@ grid-template-columns:
 .hmara{
     position: absolute;
 
-    top: -80px; /* НАСКІЛЬКИ залазить наверх */
+    top: -100px; /* НАСКІЛЬКИ залазить наверх */
 
     left: 50%;
 
