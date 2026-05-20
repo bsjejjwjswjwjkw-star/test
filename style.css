@@ -707,7 +707,7 @@ grid-template-columns:
 
     margin-top: 120px;   /* опускає нижче */
     
-    left: 370px;         /* рухає правіше */
+    left: 350px;         /* рухає правіше */
 }
 
 .bluelenta-img {
@@ -730,7 +730,7 @@ grid-template-columns:
 
     transform: translateX(-50%);
 
-    width: 700px;
+    width: 1700px;
 
     z-index: 20;
 
