@@ -50,15 +50,15 @@ body {
 
 }
 
-.hero-lights {
+.hero-light {
     position: absolute;
 
     top: 0;
-    left: 0;
+    right: 0;
 
-    width: 100%;
+    width: 650px;
 
-    z-index: 2;
+    z-index: 3;
 
     pointer-events: none;
 
@@ -700,17 +700,4 @@ grid-template-columns:
 
     opacity: 0.9;
 }
-.hero-light {
-    position: absolute;
 
-    top: 0;
-    right: 0;
-
-    width: 650px;
-
-    z-index: 3;
-
-    pointer-events: none;
-
-    opacity: 0.95;
-}
