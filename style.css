@@ -702,21 +702,7 @@ grid-template-columns:
 }
 
 
-.bluelenta {
-    position: relative;
 
-    margin-top: 120px;   /* опускає нижче */
-    
-    left: 285px;         /* рухає правіше */
-}
-
-.bluelenta-img {
-    width: 750px;       /* збільшення */
-    
-    display: block;
-
-    opacity: 0.95;
-}
 
 .content-section{
     position: relative;
@@ -740,33 +726,49 @@ grid-template-columns:
 .top-decor{
     position: absolute;
 
-    top: -120px;
+    top: -170px;
 
     left: 50%;
 
     transform: translateX(-50%);
 
-    width: 800px;
+    width: 900px;
 
-    height: 300px;
+    height: 500px;
 
-    z-index: 20;
+    z-index: 50;
 
     pointer-events: none;
 }
 
-.tabluchkaa{
+/* ЛЕНТА */
+
+.floating-lenta{
     position: absolute;
 
-    top: 70px; /* НИЖЧЕ ЛЕНТИ */
+    top: 0;
 
     left: 50%;
 
     transform: translateX(-50%);
 
-    width: 500px;
+    width: 850px;
+
+    z-index: 3;
+}
+
+/* ТАБЛИЧКА ПІД ЛЕНТОЮ */
+
+.tabluchkaa{
+    position: absolute;
+
+    top: 120px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 620px;
 
     z-index: 1;
 }
-
-
