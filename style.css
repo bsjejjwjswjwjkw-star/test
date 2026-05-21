@@ -730,7 +730,7 @@ grid-template-columns:
 
     width: 900px;
 
-    height: 500px;
+    height: 700px; /* було 500 */
 
     margin-left: auto;
     margin-right: auto;
@@ -739,11 +739,11 @@ grid-template-columns:
 }
 
 /* ЛЕНТА */
-
 .floating-lenta{
     position: absolute;
 
-    top: 0;
+    top: 120px;
+
     left: 50%;
 
     transform: translateX(-50%);
@@ -756,7 +756,7 @@ grid-template-columns:
 .tabluchkaa{
     position: absolute;
 
-    top: 120px;
+    top: 260px; 
 
     left: 50%;
 
