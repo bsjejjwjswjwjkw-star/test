@@ -724,45 +724,38 @@ grid-template-columns:
 }
 
 .top-decor{
-    position: relative;
 
     margin-top: 80px;
 
-    width: 900px;
+    display: flex;
 
-    height: 700px; /* було 500 */
+    flex-direction: column;
 
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center;
 
-    pointer-events: none;
+    gap: 0;
+
+    width: 100%;
 }
 
 /* ЛЕНТА */
 .floating-lenta{
-    position: absolute;
-
-    top: 140px;
-
-    left: 50%;
-
-    transform: translateX(-50%);
 
     width: 850px;
 
     z-index: 3;
+
+    position: relative;
 }
 
+/* ТАБЛИЧКА */
 .tabluchkaa{
-    position: absolute;
-
-    top: 300px; 
-
-    left: 50%;
-
-    transform: translateX(-50%);
 
     width: 620px;
+
+    margin-top: -40px;
+
+    position: relative;
 
     z-index: 1;
 }
