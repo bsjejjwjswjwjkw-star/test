@@ -711,7 +711,7 @@ grid-template-columns:
 }
 
 .bluelenta-img {
-    width: 600px;       /* збільшення */
+    width: 750px;       /* збільшення */
     
     display: block;
 
@@ -724,7 +724,7 @@ grid-template-columns:
 .hmara{
     position: absolute;
 
-    top: -340px; /* НАСКІЛЬКИ залазить наверх */
+    top: -550px; /* НАСКІЛЬКИ залазить наверх */
 
     left: 50%;
 
