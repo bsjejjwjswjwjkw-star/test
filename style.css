@@ -742,7 +742,7 @@ grid-template-columns:
 .floating-lenta{
     position: absolute;
 
-    top: 120px;
+    top: 140px;
 
     left: 50%;
 
@@ -756,7 +756,7 @@ grid-template-columns:
 .tabluchkaa{
     position: absolute;
 
-    top: 260px; 
+    top: 280px; 
 
     left: 50%;
 
