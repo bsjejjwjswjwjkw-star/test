@@ -736,3 +736,37 @@ grid-template-columns:
 
     pointer-events: none;
 }
+
+.top-decor{
+    position: absolute;
+
+    top: -120px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 800px;
+
+    height: 300px;
+
+    z-index: 20;
+
+    pointer-events: none;
+}
+
+.tablichka{
+    position: absolute;
+
+    top: 70px; /* НИЖЧЕ ЛЕНТИ */
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 500px;
+
+    z-index: 1;
+}
+
+
