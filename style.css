@@ -724,13 +724,13 @@ grid-template-columns:
 .hmara{
     position: absolute;
 
-    top: -550px; /* НАСКІЛЬКИ залазить наверх */
+    top: -890px; /* НАСКІЛЬКИ залазить наверх */
 
     left: 50%;
 
     transform: translateX(-50%);
 
-    width: 1800px;
+    width: 2000px;
 
     z-index: 20;
 
