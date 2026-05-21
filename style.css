@@ -724,21 +724,13 @@ grid-template-columns:
 }
 
 .top-decor{
-    position: absolute;
+    position: relative;
 
-    top: -170px;
+    width: 100%;
 
-    left: 50%;
+    height: 320px;
 
-    transform: translateX(-50%);
-
-    width: 900px;
-
-    height: 500px;
-
-    z-index: 50;
-
-    pointer-events: none;
+    margin-top: 80px;
 }
 
 /* ТАБЛИЧКА */
