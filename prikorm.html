@@ -11,24 +11,18 @@
 <style>
 
 *{
-
     margin:0;
 
     padding:0;
 
     box-sizing:border-box;
-
 }
-
-
 
 body{
 
     font-family:'Manrope', sans-serif;
 
     min-height:100vh;
-
-
 
     background:
 
@@ -38,247 +32,138 @@ body{
 
     url('phonna1.jfif');
 
-
-
     background-size:cover;
 
     background-position:center;
-
-
 
     display:flex;
 
     justify-content:center;
 
-
-
     padding:40px;
 
 }
 
-
-
 /* ГОЛОВНА КАРТОЧКА */
-
-
 
 .main-box{
 
-
-
     width:1300px;
-
-
 
     background:rgba(255,255,255,0.96);
 
-
-
     border-radius:12px;
 
-
-
     padding:50px 60px;
-
-
 
     box-shadow:
 
     0 10px 40px rgba(0,0,0,0.25);
 
-
-
     position:relative;
 
 }
 
-
-
 /* ЗАГОЛОВОК */
-
-
 
 .main-title{
 
-
-
     text-align:center;
-
-
 
     font-size:48px;
 
-
-
     font-weight:700;
-
-
 
     margin-bottom:40px;
 
-
-
     color:#222;
 
 }
 
-
-
 /* ПІДЗАГОЛОВОК */
-
-
 
 .subtitle{
 
-
-
     font-size:30px;
-
-
 
     color:#222;
 
-
-
     margin-top:60px;
 
-
-
     margin-bottom:25px;
-
-
 
     font-weight:700;
 
 }
 
-
-
 /* ТЕКСТ */
-
-
 
 .content{
 
-
-
     font-size:20px;
-
-
 
     line-height:1.9;
 
-
-
     color:#444;
-
-
 
     text-align:left;
 
 }
 
-
-
 /* ПІДКАЗКИ */
-
-
 
 .tips{
 
-
-
     position:fixed;
-
-
 
     left:20px;
 
-
-
     top:120px;
-
-
 
     width:190px;
 
-
-
     background:white;
-
-
 
     border-radius:12px;
 
-
-
     padding:20px;
-
-
 
     box-shadow:0 8px 20px rgba(0,0,0,0.2);
 
 }
 
-
-
 .tips h3{
-
-
 
     margin-bottom:12px;
 
-
-
     font-size:28px;
-
 }
 
-
-
 .tips p{
-
-
 
     line-height:1.8;
 
 }
 
-
-
     .saharok{
 
     display:block;
 
-
-
     margin:40px auto;
 
-
-
     width:500px;
-
-
 
     border-radius:20px;
 
 }
 
-
-
 .dityaiovochi{
 
     display:block;
 
-
-
     margin:40px auto;
 
-
-
     width:500px;
-
-
 
     border-radius:20px;
 
@@ -288,95 +173,51 @@ body{
 
     display:block;
 
-
-
     margin:40px auto;
 
-
-
     width:500px;
-
-
 
     border-radius:20px;
 
 }
 
-    
-
 /* БОКОВА КНОПКА */
-
-
 
 .side-button{
 
-
-
     position:fixed;
-
-
 
     right:20px;
 
-
-
     top:50%;
-
-
 
     transform:translateY(-50%);
 
-
-
     writing-mode:vertical-rl;
-
-
 
     text-orientation:mixed;
 
-
-
     background:white;
-
-
 
     padding:25px 18px;
 
-
-
     border-radius:12px;
-
-
 
     font-size:28px;
 
-
-
     font-weight:700;
-
-
 
     color:#222;
 
-
-
     box-shadow:0 10px 25px rgba(0,0,0,0.25);
 
-
-
     cursor:pointer;
-
-
 
     transition:0.3s;
 
 }
 
-
-
 .side-button:hover{
-
-
 
     transform:
 
@@ -386,15 +227,9 @@ body{
 
 }
 
-
-
 /* АДАПТИВ */
 
-
-
 @media(max-width:1100px){
-
-
 
     .tips{
 
@@ -402,41 +237,28 @@ body{
 
     }
 
-
-
     .side-button{
 
         display:none;
 
     }
 
-
-
     .main-box{
 
         width:100%;
 
         padding:30px;
-
     }
-
-
 
     .main-title{
 
         font-size:34px;
-
     }
-
-
 
     .subtitle{
 
         font-size:24px;
-
     }
-
-
 
     .content{
 
@@ -444,19 +266,13 @@ body{
 
     }
 
-
-
 }
-
-
 
     html{
 
     scroll-behavior:smooth;
 
 }
-
-
 
 .tips a{
 
@@ -474,8 +290,6 @@ body{
 
 }
 
-
-
 .tips a:hover{
 
     color:#ff7aa2;
@@ -484,65 +298,34 @@ body{
 
 }
 
-
-
 .side-card{
-
-
 
     position:fixed;
 
-
-
     right:20px;
-
-
 
     top:50%;
 
-
-
     transform:translateY(-50%);
-
-
 
     width:220px;
 
-
-
     background:white;
-
-
 
     border-radius:20px;
 
-
-
     padding:18px;
-
-
-
 animation: floating 4s ease-in-out infinite;
-
-    
 
     box-shadow:0 10px 25px rgba(0,0,0,0.25);
 
-
-
     text-align:center;
-
-
 
     transition:0.3s;
 
 }
 
-
-
 .side-card:hover{
-
-
 
     transform:
 
@@ -566,23 +349,17 @@ overflow: visible;
 
 @keyframes floating {
 
-
-
     0%{
 
         transform: translateY(-50%) translateY(0px);
 
     }
 
-
-
     50%{
 
         transform: translateY(-50%) translateY(-10px);
 
     }
-
-
 
     100%{
 
@@ -594,51 +371,29 @@ overflow: visible;
 
 .app-image{
 
-
-
     width:100%;
 
-
-
     border-radius:15px;
-
-
 
     margin-bottom:15px;
 
 }
 
-
-
 .side-card h4{
-
-
 
     font-size:24px;
 
-
-
     margin-bottom:10px;
-
-
 
     color:#222;
 
 }
 
-
-
 .side-card p{
-
-
 
     font-size:16px;
 
-
-
     line-height:1.6;
-
-
 
     color:#555;
 
@@ -646,51 +401,31 @@ overflow: visible;
 
 .stars span{
 
-
-
     position:absolute;
 
-
-
     font-size:20px;
-
-
 
     animation: sparkle 2s infinite ease-in-out;
 
 }
 
-
-
 /* РОЗТАШУВАННЯ */
 
-
-
 .stars span:nth-child(1){
-
-
 
     top:-10px;
 
     left:-10px;
 
-
-
     animation-delay:0s;
 
 }
 
-
-
 .stars span:nth-child(2){
-
-
 
     top:20px;
 
     right:-12px;
-
-
 
     animation-delay:0.5s;
 
@@ -700,29 +435,19 @@ overflow: visible;
 
 .stars span:nth-child(3){
 
-
-
     bottom:-10px;
 
     left:15px;
-
-
 
     animation-delay:1s;
 
 }
 
-
-
 .stars span:nth-child(4){
-
-
 
     bottom:20px;
 
     right:-10px;
-
-
 
     animation-delay:1.5s;
 
@@ -731,8 +456,6 @@ overflow: visible;
 
 
 /* АНІМАЦІЯ */
-
-
 
 @keyframes sparkle {
 
@@ -746,8 +469,6 @@ overflow: visible;
 
     }
 
-
-
     50%{
 
         opacity:1;
@@ -755,8 +476,6 @@ overflow: visible;
         transform:scale(1.3) rotate(15deg);
 
     }
-
-
 
     100%{
 
