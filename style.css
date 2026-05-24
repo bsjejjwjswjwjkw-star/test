@@ -8,9 +8,7 @@ body {
     box-sizing: border-box;
 }
 
-/* =========================
-   ПЛАВНОЕ ПОЯВЛЕНИЕ ТЕКСТА
-========================= */
+/*текст з'являється тут*/
 
 #sub-text {
     margin-top: 20px;
@@ -29,9 +27,7 @@ body {
     transform: translateY(0);
 }
 
-/* =========================
-   ГЛАВНЫЙ ЭКРАН
-========================= */
+/*головний екран мого сайту*/
 
 .hero {
     height: 98vh;
@@ -97,7 +93,7 @@ body {
     }
 }
 
-/* ГЛАВНЫЙ ЗАГОЛОВОК */
+/* Головний заголовок! */
 
 .hero h1 {
     position: relative;
@@ -147,7 +143,7 @@ body {
 
     z-index: 1;
 }
-/* ОПИСАНИЕ ПОД ЗАГОЛОВКОМ */
+/* описи під заголовками */
 
 .hero-description {
     margin-top: 18px;
@@ -185,9 +181,7 @@ body {
     }
 }
 
-/* =========================
-   ОСНОВНОЙ БЛОК
-========================= */
+/*основний блок*/
 
 .content-section {
     background: linear-gradient(to bottom, #ffe5db, #b6d7f0);
@@ -212,9 +206,7 @@ grid-template-columns:
     padding: 0 40px;
 }
 
-/* =========================
-   БОКОВЫЕ КОЛОНКИ
-========================= */
+/* рекламки*/
 
 .sidebar {
     position: sticky;
@@ -231,9 +223,7 @@ grid-template-columns:
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-/* =========================
-   КАТЕГОРИИ
-========================= */
+/* порада дня */
 
 .category {
     cursor: pointer;
@@ -249,17 +239,13 @@ grid-template-columns:
     background: #f0f0f0;
 }
 
-/* =========================
-   КОНТЕНТ
-========================= */
+/*контент тут*/
 
 .main-content {
     width: 100%;
 }
 
-/* =========================
-   СЕТКА КАРТОЧЕК
-========================= */
+/*сітка для карток*/
 
 .blocks {
     display: grid;
@@ -271,9 +257,7 @@ grid-template-columns:
     width: 100%;
 }
 
-/* =========================
-   КАРТОЧКИ
-========================= */
+/*карточки 9 шт*/
 
 .block {
     background: rgba(255,255,255,0.95);
@@ -298,9 +282,7 @@ grid-template-columns:
     transform: translateY(-10px);
 }
 
-/* =========================
-   КАРТИНКИ
-========================= */
+/*картинки до карток*/
 
 .block img {
     width: 100%;
@@ -318,17 +300,13 @@ grid-template-columns:
     transform: scale(1.08);
 }
 
-/* =========================
-   ВНУТРЕННОСТИ КАРТОЧКИ
-========================= */
+/*начинка карток*/
 
 .card-content {
     padding: 25px;
 }
 
-/* =========================
-   ТЕГИ
-========================= */
+/*теги*/
 
 .tags {
     display: flex;
@@ -350,9 +328,7 @@ grid-template-columns:
     color: #23415c;
 }
 
-/* =========================
-   ТЕКСТ В КАРТОЧКЕ
-========================= */
+/*Текст в карточці*/
 
 .block h3 {
     font-size: 30px;
@@ -386,9 +362,7 @@ grid-template-columns:
     color: #666;
 }
 
-/* =========================
-   КНОПКА
-========================= */
+/*кнопочки*/
 
 .btn {
     background: linear-gradient(135deg, #b0f2bc, #4ccba3);
@@ -422,9 +396,7 @@ grid-template-columns:
     background: linear-gradient(135deg, #cde8f1, #6399ab);
 }
 
-/* =========================
-   АНИМАЦИЯ КАРТОЧЕК
-========================= */
+/*анімація карток*/
 
 @keyframes showCard {
     to {
@@ -433,9 +405,7 @@ grid-template-columns:
     }
 }
 
-/* =========================
-   ЗАДЕРЖКА ПОЯВЛЕНИЯ
-========================= */
+/*плавне поетапне з'явлення*/
 
 .block:nth-child(1) {
     animation-delay: 0.2s;
@@ -479,9 +449,7 @@ grid-template-columns:
 
 
 
-/* =========================
-   ПРАВАЯ КОЛОНКА
-========================= */
+/*права колонка реклами*/
 
 .ads-sidebar {
     display: flex;
@@ -491,9 +459,7 @@ grid-template-columns:
     gap: 28px;
 }
 
-/* =========================
-   БАННЕР
-========================= */
+/*банер*/
 
 .ad-box {
     position: relative;
@@ -513,9 +479,7 @@ grid-template-columns:
     transform: translateY(-6px);
 }
 
-/* =========================
-   КАРТИНКА
-========================= */
+/*картинка там*/
 
 .ad-image {
     width: 100%;
@@ -524,9 +488,7 @@ grid-template-columns:
     border-radius: 28px;
 }
 
-/* =========================
-   КНОПКА НА БАННЕРЕ
-========================= */
+/*кнопка на банері*/
 
 .ad-btn {
     position: absolute;
@@ -740,20 +702,17 @@ grid-template-columns:
 }
 
 @media (max-width: 1100px) {
-
-    /* ===== СТРУКТУРА В ОДНУ КОЛОНКУ ===== */
+    
     .container {
         grid-template-columns: 1fr;
         padding: 0 20px;
     }
 
-    /* ===== SIDEBAR В ГОРУ/НИЗ ===== */
     .sidebar {
         position: relative;
         top: auto;
     }
 
-    /* ===== HERO ТЕКСТ ===== */
     .hero h1 {
         font-size: 34px;
         padding: 0 15px;
@@ -764,24 +723,20 @@ grid-template-columns:
         padding: 0 15px;
     }
 
-    /* ===== КАРТОЧКИ ===== */
     .block {
         animation: none; /* прибирає перевантаження на мобілках */
         opacity: 1;
         transform: none;
     }
 
-    /* ===== ГРИД КАРТОЧОК ===== */
     .blocks {
         grid-template-columns: 1fr;
     }
 
-    /* ===== AD SIDEBAR ===== */
     .ads-sidebar {
         flex-direction: row;
         flex-wrap: wrap;
     }
-
     .ad-box {
         flex: 1 1 200px;
     }
