@@ -4,8 +4,7 @@ const description = "На цьому сайті ви знайдете корис
 
 function startSubText() {
     subText.textContent = description;
-
-    // ⬇️ маленькая пауза перед появлением
+    
     setTimeout(() => {
         subText.classList.add("show");
     }, 100);
