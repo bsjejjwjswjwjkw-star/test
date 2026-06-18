@@ -671,11 +671,11 @@ grid-template-columns:
 }
 .hmara{
     position: absolute;
-    top: -350px;
+    top: -500px;
     left: 50%;
     transform: translateX(-50%);
-    width: 120%;
-    max-width: 1400px;
+    width: 190%;
+    max-width: 1900px;
     z-index: 20;
     pointer-events: none;
 }
