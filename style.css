@@ -675,7 +675,7 @@ grid-template-columns:
     left: 50%;
     transform: translateX(-50%);
     width: 190%;
-    max-width: 1800px;
+    max-width: 1900px;
     z-index: 20;
     pointer-events: none;
 }
