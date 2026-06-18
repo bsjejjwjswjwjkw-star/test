@@ -671,7 +671,7 @@ grid-template-columns:
 }
 .hmara{
     position: absolute;
-    top: -720px;
+    top: -850px;
     left: 50%;
     transform: translateX(-50%);
     width: 190%;
